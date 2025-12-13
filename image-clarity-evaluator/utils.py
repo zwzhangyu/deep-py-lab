@@ -18,8 +18,3 @@ def load_image(image_url):
         raise ValueError("无法读取图片：" + image_url)
 
     return image
-
-
-def load_imagev1(image_url):
-    if image_url.startswith("http"):
-        resp = requests.get(image_url,timeout=10)
